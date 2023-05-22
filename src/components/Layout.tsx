@@ -18,7 +18,7 @@ const Header = () => {
               <Link href="/about">About</Link>
             </Box>
           </Box>
-          <Box>
+          <Box display="flex" alignItems="center" gap={1}>
             <Button variant="contained" color="primary">
               Sign In / Sign Up
             </Button>
