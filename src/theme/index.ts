@@ -17,6 +17,14 @@ const theme = createTheme({
     secondary: {
       main: "#b9cc4c",
     },
+    background: {
+      default: "rgba(0,0,0,0.04)",
+    },
+    text: {
+      primary: "rgba(0,0,0,0.5)",
+      secondary: "rgba(0,0,0,0.4)",
+      disabled: "rgba(0,0,0,0.3)",
+    },
   },
   typography: {
     fontFamily: roboto.style.fontFamily,
@@ -29,6 +37,16 @@ const theme = createTheme({
           borderWidth: "2px",
           boxShadow: "none",
         },
+      },
+    },
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          borderRadius: "15px",
+        },
+      },
+      defaultProps: {
+        elevation: 0,
       },
     },
   },
