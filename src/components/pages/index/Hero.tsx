@@ -10,7 +10,7 @@ const Hero = () => {
           <Grid container>
             <Grid item xs={4} display="flex">
               <img src={image.src} alt="books" width="100%" />
-              {/*TODO: find out why NextImage component don't work */}
+              {/*TODO: find out why NextImage component doesn't work */}
               {/*<Image src={image.src} width={500} height={500} alt="books" />*/}
             </Grid>
             <Grid item xs={8} p={3}>
