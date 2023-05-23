@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, Button, Container, Divider, IconButton, Typography } from "@mui/material"
+import { Box, Button, Container, IconButton, Typography } from "@mui/material"
 import { AccountCircleOutlined } from "@mui/icons-material"
 import { Link } from "@/components/Link"
 
@@ -36,7 +36,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <Box>
       <Header />
-      <Divider />
       {children}
     </Box>
   )
