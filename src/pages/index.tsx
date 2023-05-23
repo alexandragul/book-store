@@ -1,6 +1,7 @@
 import Head from "next/head"
+import { Box, Container } from "@mui/material"
 import Layout from "@/components/Layout"
-import Hero from "@/components/pages/index/Hero"
+import Banner from "@/components/pages/index/Banner"
 
 export default function Home() {
   return (
@@ -12,7 +13,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <Hero />
+        <Box bgcolor="background.default" minHeight="100vh" py={4}>
+          <Container maxWidth="lg">
+            <Banner />
+          </Container>
+        </Box>
       </Layout>
     </>
   )
