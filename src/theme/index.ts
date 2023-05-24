@@ -20,8 +20,8 @@ const theme = createTheme({
       default: "rgba(0,0,0,0.04)",
     },
     text: {
-      primary: "rgba(0,0,0,0.5)",
-      secondary: "rgba(0,0,0,0.4)",
+      primary: "rgba(0,0,0,0.6)",
+      secondary: "rgba(0,0,0,0.48)",
       disabled: "rgba(0,0,0,0.3)",
     },
   },
