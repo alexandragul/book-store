@@ -2,6 +2,7 @@ import Head from "next/head"
 import { Box, Container } from "@mui/material"
 import Layout from "@/components/Layout"
 import Banner from "@/components/pages/index/Banner"
+import PopularCategories from "@/components/pages/index/PopularCategories"
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Box bgcolor="background.default" minHeight="100vh" py={4}>
           <Container maxWidth="lg">
             <Banner />
+            <PopularCategories />
           </Container>
         </Box>
       </Layout>
