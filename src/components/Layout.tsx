@@ -13,16 +13,22 @@ const Header = () => {
               Storybook
             </Typography>
             <Box display="flex" alignItems="center" gap={3}>
-              <Link href="/">Home</Link>
-              <Link href="/books">Books</Link>
-              <Link href="/about">About</Link>
+              <Link href="/" color="secondary">
+                Home
+              </Link>
+              <Link href="/books" color="secondary">
+                Books
+              </Link>
+              <Link href="/about" color="secondary">
+                About
+              </Link>
             </Box>
           </Box>
           <Box display="flex" alignItems="center" gap={1}>
             <Button variant="contained" color="primary">
               Sign In / Sign Up
             </Button>
-            <IconButton color="primary" size="medium">
+            <IconButton color="secondary" size="medium">
               <AccountCircleOutlined />
             </IconButton>
           </Box>

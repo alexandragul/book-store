@@ -11,18 +11,13 @@ export const roboto = Roboto({
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#6e50d5",
+      main: "#A0C587",
     },
     secondary: {
-      main: "#6eb704",
+      main: "#1F1E2F",
     },
     background: {
       default: "rgba(0,0,0,0.04)",
-    },
-    text: {
-      primary: "rgba(0,0,0,0.6)",
-      secondary: "rgba(0,0,0,0.48)",
-      disabled: "rgba(0,0,0,0.3)",
     },
   },
   typography: {
@@ -32,9 +27,12 @@ const theme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
-          borderRadius: "20px",
+          borderRadius: "24px",
           borderWidth: "2px",
           boxShadow: "none",
+        },
+        contained: {
+          color: "white",
         },
       },
     },
