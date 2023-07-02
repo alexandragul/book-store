@@ -1,13 +1,18 @@
 import React from "react"
+import styled from "styled-components"
 import { Grid, Paper, Typography } from "@mui/material"
 import image from "public/images/photograph.jpeg"
+
+const StyledImage = styled("img")`
+  object-fit: cover;
+`
 
 const Banner = () => {
   return (
     <Paper sx={{ overflow: "hidden", mb: 8 }}>
       <Grid container>
         <Grid item xs={4} display="flex">
-          <img src={image.src} alt="books" width="100%" />
+          <StyledImage src={image.src} alt="books" width="100%" />
           {/*TODO: find out why NextImage component doesn't work */}
           {/*<Image src={image.src} width={500} height={500} alt="books" />*/}
         </Grid>
