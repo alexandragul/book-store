@@ -1,5 +1,5 @@
 import React from "react"
-import { Grid, Typography } from "@mui/material"
+import { Box, Grid, Typography } from "@mui/material"
 
 const booksTop = [
   {
@@ -43,39 +43,36 @@ const authorsTop = [
 
 const BooksTop = () => {
   return (
-    <Grid container spacing={3}>
-      <Grid container item xs={8} spacing={2} pb={2}>
-        <Grid item xs={12} mb={1}>
-          <Typography variant="h4">Top 6 books</Typography>
-        </Grid>
-        {booksTop.map(({ title, author, rating }) => (
-          <Grid key={title} item xs={6}>
-            <Typography variant="h5">{title}</Typography>
-            <Typography variant="body1">{author}</Typography>
-          </Grid>
-        ))}
-      </Grid>
-      <Grid item xs={4}>
-        <Grid
-          container
-          item
-          xs={12}
-          spacing={2}
-          direction="column"
-          bgcolor="white"
-          borderRadius="15px"
-          pb={2}
-        >
-          <Grid item xs={12} mb={1}>
-            <Typography variant="h4">Top 6 authors</Typography>
-          </Grid>
-          {authorsTop.map(({ author, description }) => (
-            <Grid item xs={12} key={author}>
-              <Typography variant="h5">{author}</Typography>
-              <Typography variant="body1">{description}</Typography>
+    <Grid container spacing={2}>
+      <Grid container item xs={6} md={8}>
+        <Box p={4}>
+          <Grid container spacing={2}>
+            <Grid item xs={12} mb={1}>
+              <Typography variant="h4">Top 6 books</Typography>
             </Grid>
-          ))}
-        </Grid>
+            {booksTop.map(({ title, author, rating }) => (
+              <Grid key={title} item xs={12} md={6}>
+                <Typography variant="h5">{title}</Typography>
+                <Typography variant="body1">{author}</Typography>
+              </Grid>
+            ))}
+          </Grid>
+        </Box>
+      </Grid>
+      <Grid container item xs={6} md={4} direction="column">
+        <Box bgcolor="white" borderRadius="15px" p={4}>
+          <Grid container spacing={2}>
+            <Grid item xs={12} mb={1}>
+              <Typography variant="h4">Top 6 authors</Typography>
+            </Grid>
+            {authorsTop.map(({ author, description }) => (
+              <Grid item xs={12} key={author}>
+                <Typography variant="h5">{author}</Typography>
+                <Typography variant="body1">{description}</Typography>
+              </Grid>
+            ))}
+          </Grid>
+        </Box>
       </Grid>
     </Grid>
   )
