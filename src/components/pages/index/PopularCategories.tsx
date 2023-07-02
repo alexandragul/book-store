@@ -31,7 +31,7 @@ const categories = [
 
 const PopularCategories = () => {
   return (
-    <>
+    <Box mb={8}>
       <Typography variant="h5" color="text.primary" fontWeight={700} mb={2}>
         Popular categories
       </Typography>
@@ -55,7 +55,7 @@ const PopularCategories = () => {
           </Grid>
         ))}
       </Grid>
-    </>
+    </Box>
   )
 }
 

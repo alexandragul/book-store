@@ -3,6 +3,7 @@ import { Box, Container } from "@mui/material"
 import Layout from "@/components/Layout"
 import Banner from "@/components/pages/index/Banner"
 import PopularCategories from "@/components/pages/index/PopularCategories"
+import BooksTop from "@/components/pages/index/BooksTop"
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
           <Container maxWidth="lg">
             <Banner />
             <PopularCategories />
+            <BooksTop />
           </Container>
         </Box>
       </Layout>
