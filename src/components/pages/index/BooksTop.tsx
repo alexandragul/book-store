@@ -3,7 +3,7 @@ import { Box, Grid, Typography } from "@mui/material"
 
 const booksTop = [
   {
-    title: "Rome and Juliet",
+    title: "Romeo and Juliet",
     author: "William Shakespeare",
     rating: 9,
   },
