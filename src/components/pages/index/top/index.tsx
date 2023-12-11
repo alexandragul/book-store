@@ -22,7 +22,7 @@ const BooksTop: FC<{ books: Book[] }> = ({ books }) => {
 
 const AuthorsTop: FC<{ authors: Author[] }> = ({ authors }) => {
   return (
-    <Box bgcolor="white" borderRadius="16px" margin={-2} padding={2}>
+    <Box bgcolor="white" borderRadius="16px" padding={3} my={-3}>
       <Grid container>
         <Grid item mb={1}>
           <Typography variant="h4">Top 6 authors</Typography>
