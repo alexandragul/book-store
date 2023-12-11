@@ -20,7 +20,7 @@ const BooksTop: FC<{ books: Book[] }> = ({ books }) => {
   )
 }
 
-const AuthorsTop: FC<{ authors: typeof authorsTop }> = ({ authors }) => {
+const AuthorsTop: FC<{ authors: Author[] }> = ({ authors }) => {
   return (
     <Box bgcolor="white" borderRadius="15px">
       <Grid container>
@@ -28,7 +28,7 @@ const AuthorsTop: FC<{ authors: typeof authorsTop }> = ({ authors }) => {
           <Typography variant="h4">Top 6 authors</Typography>
         </Grid>
         {authors.map((author) => (
-          <Grid item key={author.author}>
+          <Grid item key={author.id}>
             <AuthorItem author={author} />
           </Grid>
         ))}
