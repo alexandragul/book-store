@@ -1,6 +1,6 @@
 import Head from "next/head"
 import { Box, Container } from "@mui/material"
-import { fetcher } from "@/api/axios"
+import { api } from "@/api/axios"
 import { Book } from "@/api/types"
 import Layout from "@/components/Layout"
 import Banner from "@/components/pages/index/Banner"
@@ -8,7 +8,7 @@ import PopularCategories from "@/components/pages/index/PopularCategories"
 import BooksTop from "@/components/pages/index/booksTop"
 
 export async function getServerSideProps() {
-  const res = await fetcher.get("/books")
+  const res = await api.get("/books")
   return { props: { books: res.data } }
 }
 
