@@ -5,7 +5,7 @@ import { Book } from "@/api/types"
 import Layout from "@/components/Layout"
 import Banner from "@/components/pages/index/Banner"
 import PopularCategories from "@/components/pages/index/PopularCategories"
-import BooksTop from "@/components/pages/index/booksTop"
+import Top from "../components/pages/index/top"
 
 export async function getServerSideProps() {
   const res = await api.get("/books")
@@ -26,7 +26,7 @@ export default function Home({ books }: { books: Book[] }) {
           <Container maxWidth="lg">
             <Banner />
             <PopularCategories />
-            <BooksTop books={books} />
+            <Top books={books} />
           </Container>
         </Box>
       </Layout>
