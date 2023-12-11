@@ -37,11 +37,10 @@ const PopularCategories = () => {
       </Typography>
       <Grid container>
         {categories.map(({ title, IconComponent }) => (
-          <Grid item xs={2} display="flex" key={title}>
+          <Grid item xs={4} md={2} display="flex" key={title}>
             <Box
               bgcolor="common.white"
               borderRadius="15px"
-              m={1}
               p={2}
               width="100%"
               display="flex"
