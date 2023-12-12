@@ -1,7 +1,6 @@
-import { ComponentProps } from "react"
-import styled from "styled-components"
+import styled from "@emotion/styled"
 
-export const StyledImage = styled.img<ComponentProps<"img">>`
+export const StyledImage = styled.img`
   width: 100px;
   height: 150px;
   object-fit: cover;

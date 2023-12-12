@@ -1,9 +1,9 @@
 import React from "react"
-import styled from "styled-components"
+import styled from "@emotion/styled"
 import { Grid, Paper, Typography } from "@mui/material"
 import image from "public/images/photograph.jpeg"
 
-const StyledImage = styled("img")`
+const StyledImage = styled.img`
   object-fit: cover;
 `
 
