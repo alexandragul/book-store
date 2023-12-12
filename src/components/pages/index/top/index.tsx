@@ -43,7 +43,7 @@ const Top: FC<{ books: Book[] }> = ({ books }) => {
       <Grid item xs={12} sm={6} md={8}>
         <BooksTop books={books} />
       </Grid>
-      <Grid item xs={12} sm={6} md={4} direction="column">
+      <Grid item xs={12} sm={6} md={4}>
         <AuthorsTop authors={authorsTop} />
       </Grid>
     </Grid>
