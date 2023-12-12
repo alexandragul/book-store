@@ -1,6 +1,6 @@
 import React from "react"
 import { Box, Grid, Typography } from "@mui/material"
-import { categories } from "./mocks"
+import { categoriesMock } from "./mocks"
 
 const PopularCategories = () => {
   return (
@@ -9,7 +9,7 @@ const PopularCategories = () => {
         Popular categories
       </Typography>
       <Grid container>
-        {categories.map(({ title, IconComponent }) => (
+        {categoriesMock.map(({ title, IconComponent }) => (
           <Grid item xs={6} sm={4} md={2} display="flex" key={title}>
             <Box
               bgcolor="common.white"

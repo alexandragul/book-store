@@ -1,6 +1,6 @@
 import { AlienIcon, HeartIcon, PaletteIcon, PenIcon, PuzzleIcon, SpyIcon } from "@/components/icons"
 
-export const categories = [
+export const categoriesMock = [
   {
     title: "Thriller",
     IconComponent: SpyIcon,
