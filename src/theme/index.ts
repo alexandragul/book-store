@@ -46,6 +46,11 @@ const theme = createTheme({
         elevation: 0,
       },
     },
+    MuiGrid: {
+      defaultProps: {
+        spacing: 2,
+      },
+    },
   },
 })
 

@@ -1,33 +1,6 @@
 import React from "react"
 import { Box, Grid, Typography } from "@mui/material"
-import { AlienIcon, HeartIcon, PaletteIcon, PenIcon, PuzzleIcon, SpyIcon } from "@/components/icons"
-
-const categories = [
-  {
-    title: "Thriller",
-    IconComponent: SpyIcon,
-  },
-  {
-    title: "Science",
-    IconComponent: AlienIcon,
-  },
-  {
-    title: "Art",
-    IconComponent: PaletteIcon,
-  },
-  {
-    title: "History",
-    IconComponent: PenIcon,
-  },
-  {
-    title: "Romance",
-    IconComponent: HeartIcon,
-  },
-  {
-    title: "Children",
-    IconComponent: PuzzleIcon,
-  },
-]
+import { categoriesMock } from "./mocks"
 
 const PopularCategories = () => {
   return (
@@ -36,12 +9,11 @@ const PopularCategories = () => {
         Popular categories
       </Typography>
       <Grid container>
-        {categories.map(({ title, IconComponent }) => (
-          <Grid item xs={2} display="flex" key={title}>
+        {categoriesMock.map(({ title, IconComponent }) => (
+          <Grid item xs={6} sm={4} md={2} display="flex" key={title}>
             <Box
               bgcolor="common.white"
               borderRadius="15px"
-              m={1}
               p={2}
               width="100%"
               display="flex"
