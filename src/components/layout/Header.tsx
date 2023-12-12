@@ -13,7 +13,7 @@ export const Header = () => {
   const { isMobile } = useDeviceDetect()
 
   return (
-    <Container maxWidth="lg" sx={{ padding: "8px" }}>
+    <Container maxWidth="lg" sx={{ paddingY: 1 }}>
       <Box display="flex" alignItems="center" justifyContent="space-between">
         <Box display="flex" alignItems="center" gap={5}>
           <Typography variant="h4" component="h1" color="primary" fontWeight="700">
