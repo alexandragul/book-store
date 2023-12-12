@@ -3,7 +3,7 @@ import markTwainImage from "public/images/mark-twain.jpeg"
 import williamShakespeareImage from "public/images/william-shakespeare.jpeg"
 import { Author } from "@/api/types"
 
-export const authorsTop: Author[] = [
+export const authorsTopMock: Author[] = [
   {
     id: 1,
     firstName: "Edgar",
