@@ -4,7 +4,7 @@ import { api } from "@/api/axios"
 import { Book } from "@/api/types"
 import Layout from "@/components/layout"
 import Banner from "@/components/pages/index/Banner"
-import PopularCategories from "@/components/pages/index/PopularCategories"
+import PopularCategories from "@/components/pages/index/popularCategories"
 import Top from "../components/pages/index/top"
 
 export async function getServerSideProps() {
