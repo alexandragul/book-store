@@ -1,7 +1,9 @@
+import { StaticImageData } from "next/dist/client/legacy/image"
+
 // TODO: remove it after update on api side
 interface MockedAuthorFields {
   description?: string
-  image: string
+  image: StaticImageData
 }
 
 export interface Author extends MockedAuthorFields {

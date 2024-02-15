@@ -1,6 +1,6 @@
-import edgarAllanPoeImage from "public/images/edgar-allan-poe.webp"
-import markTwainImage from "public/images/mark-twain.jpeg"
-import williamShakespeareImage from "public/images/william-shakespeare.jpeg"
+import edgarAllanPoeImage from "/public/images/edgar-allan-poe.webp"
+import markTwainImage from "/public/images/mark-twain.jpeg"
+import williamShakespeareImage from "/public/images/william-shakespeare.jpeg"
 import { Author } from "@/api/types"
 
 export const authorsTopMock: Author[] = [
@@ -9,7 +9,7 @@ export const authorsTopMock: Author[] = [
     firstName: "Edgar",
     lastName: "Poe",
     description: "American short story author, poet",
-    image: edgarAllanPoeImage.src,
+    image: edgarAllanPoeImage,
     books: [],
   },
   {
@@ -17,7 +17,7 @@ export const authorsTopMock: Author[] = [
     firstName: "Mark",
     lastName: "Twain",
     description: "American humorist, novelist, short story author",
-    image: markTwainImage.src,
+    image: markTwainImage,
     books: [],
   },
   {
@@ -25,7 +25,7 @@ export const authorsTopMock: Author[] = [
     firstName: "William",
     lastName: "Shakespeare",
     description: "Greatest english dramatist and poet",
-    image: williamShakespeareImage.src,
+    image: williamShakespeareImage,
     books: [],
   },
 ]
