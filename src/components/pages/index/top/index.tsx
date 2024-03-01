@@ -6,7 +6,7 @@ import { AuthorsTop } from "./AuthorsTop"
 
 const Top: FC<{ books: Book[]; authors: Author[] }> = ({ books, authors }) => {
   return (
-    <Grid container>
+    <Grid container pb={3}>
       <Grid item xs={12} sm={6} md={8}>
         <BooksTop books={books} />
       </Grid>
