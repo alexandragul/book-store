@@ -51,6 +51,11 @@ const theme = createTheme({
         spacing: 2,
       },
     },
+    MuiContainer: {
+      defaultProps: {
+        maxWidth: "lg",
+      },
+    },
   },
 })
 

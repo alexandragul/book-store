@@ -1,5 +1,5 @@
 import Head from "next/head"
-import { Box, Container } from "@mui/material"
+import { Container } from "@mui/material"
 import { api } from "@/api/axios"
 import { Author, Book } from "@/api/types"
 import Layout from "@/components/layout"
@@ -29,13 +29,11 @@ export default function Home({ books, authors }: HomeProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <Box bgcolor="background.default" minHeight="100vh" py={4}>
-          <Container maxWidth="lg">
-            <Banner />
-            <PopularCategories />
-            <Top books={books} authors={authors} />
-          </Container>
-        </Box>
+        <Container>
+          <Banner />
+          <PopularCategories />
+          <Top books={books} authors={authors} />
+        </Container>
       </Layout>
     </>
   )

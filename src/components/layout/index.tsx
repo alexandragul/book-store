@@ -6,7 +6,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <Box>
       <Header />
-      {children}
+      <Box bgcolor="background.default" minHeight="100vh" py={4}>
+        {children}
+      </Box>
     </Box>
   )
 }

@@ -2,15 +2,16 @@ import React, { FC } from "react"
 import { join } from "lodash-es"
 import { Box, Grid, Typography } from "@mui/material"
 import { Author, Book } from "@/api/types"
-import { StyledImage } from "./styles"
+import { BookCard, StyledImage } from "./styles"
 
 const TOP_BOOKS_AMOUNT = 4
 
 export const BookItem: FC<{ book: Book; author: Author }> = ({ book, author }) => {
   const authorFullName = join([author.firstName, author.lastName], " ")
+  const href = `/books/${book.id}`
 
   return (
-    <Box display="flex" gap={2}>
+    <BookCard href={href}>
       {book.image && <StyledImage src={book.image} alt={authorFullName} width={100} height={100} />}
       <Box>
         <Typography variant="body1" fontWeight={900}>
@@ -20,7 +21,7 @@ export const BookItem: FC<{ book: Book; author: Author }> = ({ book, author }) =
           {authorFullName}
         </Typography>
       </Box>
-    </Box>
+    </BookCard>
   )
 }
 
