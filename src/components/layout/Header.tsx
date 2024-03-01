@@ -5,7 +5,7 @@ import { useDeviceDetect } from "@/hooks/useDeviceDetect"
 
 const navigation = [
   { label: "Home", url: "/" },
-  { label: "books", url: "/books" },
+  { label: "Books", url: "/books" },
   { label: "About", url: "/about" },
 ]
 
