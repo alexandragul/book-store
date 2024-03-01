@@ -6,7 +6,7 @@ export default function Index() {
   return (
     <>
       <Head>
-        <title>Books</title>
+        <title>Storybook - Books</title>
       </Head>
       <Layout>
         <Container>
