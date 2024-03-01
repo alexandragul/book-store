@@ -21,7 +21,7 @@ const Banner = () => {
           <Typography variant="h3" pb={2}>
             Books are Uniquely Portable Magic
           </Typography>
-          <Typography variant="body1">
+          <Typography variant="body1" color="text.secondary">
             A growing body of research indicates that reading literally changes your mind. Using MRI
             scans, researches have confirmed Trusted Source that reading involves a complex networks
             of circuits and signals in the brain. As your reading ability matures, those networks

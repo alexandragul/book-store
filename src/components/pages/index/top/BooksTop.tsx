@@ -17,7 +17,7 @@ export const BookItem: FC<{ book: Book; author: Author }> = ({ book, author }) =
         <Typography variant="body1" fontWeight={900}>
           {book.title}
         </Typography>
-        <Typography variant="body1" color="secondary">
+        <Typography variant="body2" color="text.secondary">
           {authorFullName}
         </Typography>
       </Box>

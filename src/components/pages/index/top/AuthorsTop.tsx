@@ -16,7 +16,11 @@ export const AuthorItem: FC<{ author: Author }> = ({ author }) => {
         <Typography variant="body1" fontWeight={900}>
           {fullName}
         </Typography>
-        {author.summary && <Typography variant="body1">{author.summary}</Typography>}
+        {author.summary && (
+          <Typography variant="body2" color="text.secondary">
+            {author.summary}
+          </Typography>
+        )}
       </Box>
     </Box>
   )
