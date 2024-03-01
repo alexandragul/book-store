@@ -2,23 +2,30 @@ import { Box, Button, Container, IconButton, Typography } from "@mui/material"
 import { AccountCircleOutlined } from "@mui/icons-material"
 import { Link } from "@/components/Link"
 import { useDeviceDetect } from "@/hooks/useDeviceDetect"
+import { styled } from "@mui/material/styles"
 
 const navigation = [
-  { label: "Home", url: "/" },
   { label: "Books", url: "/books" },
   { label: "About", url: "/about" },
 ]
+
+const HeaderLink = styled(Link)`
+  all: unset;
+  cursor: pointer;
+`
 
 export const Header = () => {
   const { isMobile } = useDeviceDetect()
 
   return (
-    <Container maxWidth="lg" sx={{ paddingY: 1 }}>
+    <Container sx={{ paddingY: 1 }}>
       <Box display="flex" alignItems="center" justifyContent="space-between">
         <Box display="flex" alignItems="center" gap={5}>
-          <Typography variant="h4" component="h1" color="primary" fontWeight="700">
-            Storybook
-          </Typography>
+          <HeaderLink href="/">
+            <Typography variant="h4" component="h1" color="primary" fontWeight="700">
+              Storybook
+            </Typography>
+          </HeaderLink>
           <Box display="flex" alignItems="center" gap={3}>
             {!isMobile &&
               navigation.map((item) => (
