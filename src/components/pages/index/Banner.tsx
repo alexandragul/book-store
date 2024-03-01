@@ -1,10 +1,13 @@
 import React from "react"
+import Image from "next/image"
 import styled from "@emotion/styled"
 import { Grid, Paper, Typography } from "@mui/material"
-import image from "public/images/photograph.jpeg"
+import image from "/public/images/photograph.jpeg"
 
-const StyledImage = styled.img`
+const StyledImage = styled(Image)`
   object-fit: cover;
+  width: 100%;
+  height: 100%;
 `
 
 const Banner = () => {
@@ -12,9 +15,7 @@ const Banner = () => {
     <Paper sx={{ overflow: "hidden", mb: 8 }}>
       <Grid container spacing={0}>
         <Grid item xs={12} sm={6} md={4} display="flex">
-          <StyledImage src={image.src} alt="books" width="100%" />
-          {/*TODO: find out why NextImage component doesn't work */}
-          {/*<Image src={image.src} width={500} height={500} alt="books" />*/}
+          <StyledImage src={image} alt="books" />
         </Grid>
         <Grid item xs={12} sm={6} md={8} p={[2, 4]}>
           <Typography variant="h4" color="text.primary" pb={2} fontWeight={500}>
