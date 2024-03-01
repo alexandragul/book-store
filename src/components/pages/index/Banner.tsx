@@ -17,11 +17,11 @@ const Banner = () => {
         <Grid item xs={12} sm={6} md={4} display="flex">
           <StyledImage src={image} alt="books" />
         </Grid>
-        <Grid item xs={12} sm={6} md={8} p={[2, 4]}>
-          <Typography variant="h4" color="text.primary" pb={2} fontWeight={500}>
-            Books Are Uniquely Portable Magic
+        <Grid item xs={12} sm={6} md={8} p={[2, 5]}>
+          <Typography variant="h3" pb={2}>
+            Books are Uniquely Portable Magic
           </Typography>
-          <Typography variant="body1" color="text.secondary">
+          <Typography variant="body1">
             A growing body of research indicates that reading literally changes your mind. Using MRI
             scans, researches have confirmed Trusted Source that reading involves a complex networks
             of circuits and signals in the brain. As your reading ability matures, those networks

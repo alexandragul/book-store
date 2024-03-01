@@ -5,8 +5,8 @@ import { categoriesMock } from "./mocks"
 const PopularCategories = () => {
   return (
     <Box mb={8}>
-      <Typography variant="h5" color="text.primary" fontWeight={700} mb={2}>
-        Popular categories
+      <Typography variant="h4" mb={2}>
+        Popular Categories
       </Typography>
       <Grid container>
         {categoriesMock.map(({ title, IconComponent }) => (

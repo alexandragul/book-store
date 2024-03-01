@@ -27,7 +27,7 @@ export const BookItem: FC<{ book: Book; author: Author }> = ({ book, author }) =
 
 export const BooksTop: FC<{ books: Book[] }> = ({ books }) => {
   const booksTop = books.slice(0, TOP_BOOKS_AMOUNT)
-  const topBooksTitle = `Top ${TOP_BOOKS_AMOUNT} books`
+  const topBooksTitle = `Top ${TOP_BOOKS_AMOUNT} Books`
 
   return (
     <Grid container>

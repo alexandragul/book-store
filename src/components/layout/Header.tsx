@@ -22,7 +22,7 @@ export const Header = () => {
       <Box display="flex" alignItems="center" justifyContent="space-between">
         <Box display="flex" alignItems="center" gap={5}>
           <HeaderLink href="/">
-            <Typography variant="h4" component="h1" color="primary" fontWeight="700">
+            <Typography variant="h4" component="h1" color="primary" fontWeight={900}>
               Storybook
             </Typography>
           </HeaderLink>

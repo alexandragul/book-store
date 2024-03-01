@@ -24,7 +24,7 @@ export const AuthorItem: FC<{ author: Author }> = ({ author }) => {
 
 export const AuthorsTop: FC<{ authors: Author[] }> = ({ authors }) => {
   const authorsTop = authors.slice(0, TOP_AUTHORS_AMOUNT)
-  const topAuthorsTitle = `Top ${TOP_AUTHORS_AMOUNT} authors`
+  const topAuthorsTitle = `Top ${TOP_AUTHORS_AMOUNT} Authors`
 
   return (
     <Box bgcolor="white" borderRadius="16px" padding={3} my={[0, -3]}>
