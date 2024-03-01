@@ -9,6 +9,23 @@ const navigation = [
   { label: "About", url: "/about" },
 ]
 
+const HeaderWrapper = styled(Box)(
+  ({ theme }) => `
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: ${theme.palette.common.white}
+`,
+)
+
+const HeaderContainer = styled(Container)`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`
+
 const HeaderLink = styled(Link)`
   all: unset;
   cursor: pointer;
@@ -18,8 +35,8 @@ export const Header = () => {
   const { isMobile } = useDeviceDetect()
 
   return (
-    <Container sx={{ paddingY: 1 }}>
-      <Box display="flex" alignItems="center" justifyContent="space-between">
+    <HeaderWrapper>
+      <HeaderContainer>
         <Box display="flex" alignItems="center" gap={5}>
           <HeaderLink href="/">
             <Typography variant="h4" component="h1" color="primary" fontWeight={900}>
@@ -29,7 +46,7 @@ export const Header = () => {
           <Box display="flex" alignItems="center" gap={3}>
             {!isMobile &&
               navigation.map((item) => (
-                <Link href={item.url} key={item.url} color="secondary">
+                <Link href={item.url} key={item.url} color="text.primary">
                   {item.label}
                 </Link>
               ))}
@@ -45,7 +62,7 @@ export const Header = () => {
             <AccountCircleOutlined />
           </IconButton>
         </Box>
-      </Box>
-    </Container>
+      </HeaderContainer>
+    </HeaderWrapper>
   )
 }
