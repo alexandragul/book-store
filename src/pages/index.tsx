@@ -1,18 +1,25 @@
 import Head from "next/head"
 import { Box, Container } from "@mui/material"
 import { api } from "@/api/axios"
-import { Book } from "@/api/types"
+import { Author, Book } from "@/api/types"
 import Layout from "@/components/layout"
 import Banner from "@/components/pages/index/Banner"
 import PopularCategories from "@/components/pages/index/popularCategories"
-import Top from "../components/pages/index/top"
+import Top from "@/components/pages/index/top"
 
 export async function getServerSideProps() {
-  const res = await api.get("/books")
-  return { props: { books: res.data } }
+  const { data: books } = await api.get("/books")
+  const { data: authors } = await api.get("/authors")
+
+  return { props: { books, authors } }
 }
 
-export default function Home({ books }: { books: Book[] }) {
+interface HomeProps {
+  books: Book[]
+  authors: Author[]
+}
+
+export default function Home({ books, authors }: HomeProps) {
   return (
     <>
       <Head>
@@ -26,7 +33,7 @@ export default function Home({ books }: { books: Book[] }) {
           <Container maxWidth="lg">
             <Banner />
             <PopularCategories />
-            <Top books={books} />
+            <Top books={books} authors={authors} />
           </Container>
         </Box>
       </Layout>

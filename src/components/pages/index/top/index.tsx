@@ -3,7 +3,6 @@ import { Box, Grid, Typography } from "@mui/material"
 import { Author, Book } from "@/api/types"
 import { BookItem } from "./BookItem"
 import { AuthorItem } from "./AuthorItem"
-import { authorsTopMock } from "./mocks"
 
 const TOP_BOOKS_AMOUNT = 4
 const TOP_AUTHORS_AMOUNT = 2
@@ -46,14 +45,14 @@ const AuthorsTop: FC<{ authors: Author[] }> = ({ authors }) => {
   )
 }
 
-const Top: FC<{ books: Book[] }> = ({ books }) => {
+const Top: FC<{ books: Book[]; authors: Author[] }> = ({ books, authors }) => {
   return (
     <Grid container>
       <Grid item xs={12} sm={6} md={8}>
         <BooksTop books={books} />
       </Grid>
       <Grid item xs={12} sm={6} md={4}>
-        <AuthorsTop authors={authorsTopMock} />
+        <AuthorsTop authors={authors} />
       </Grid>
     </Grid>
   )

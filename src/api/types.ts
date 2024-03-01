@@ -1,16 +1,12 @@
-import { StaticImageData } from "next/dist/client/legacy/image"
+import { Nullable } from "@/utils/types"
 
-// TODO: remove it after update on api side
-interface MockedAuthorFields {
-  description?: string
-  image: StaticImageData
-}
-
-export interface Author extends MockedAuthorFields {
+export interface Author {
   id: number
   firstName: string
   lastName: string
-  books: Book[]
+  summary: Nullable<string>
+  image: Nullable<string>
+  books?: Book[]
 }
 
 export interface Book {
@@ -18,5 +14,5 @@ export interface Book {
   title: string
   authorId: number
   author?: Author
-  image: string
+  image: Nullable<string>
 }

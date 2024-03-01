@@ -9,12 +9,12 @@ export const AuthorItem: FC<{ author: Author }> = ({ author }) => {
 
   return (
     <Box display="flex" gap={2}>
-      <StyledImage src={author.image} alt={fullName} />
+      {author.image && <StyledImage src={author.image} alt={fullName} width={100} height={100} />}
       <Box>
         <Typography variant="body1" fontWeight={900}>
           {fullName}
         </Typography>
-        <Typography variant="body1">{author.description}</Typography>
+        {author.summary && <Typography variant="body1">{author.summary}</Typography>}
       </Box>
     </Box>
   )
