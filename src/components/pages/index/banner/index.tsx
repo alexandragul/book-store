@@ -12,7 +12,7 @@ const StyledImage = styled(Image)`
 
 const Banner = () => {
   return (
-    <Paper sx={{ overflow: "hidden", mb: 8 }}>
+    <Paper variant="outlined" sx={{ overflow: "hidden", mb: 8 }}>
       <Grid container spacing={0}>
         <Grid item xs={12} sm={6} md={4} display="flex">
           <StyledImage src={image} alt="books" />

@@ -1,6 +1,6 @@
 import React, { FC } from "react"
 import { join } from "lodash-es"
-import { Box, Grid, Typography } from "@mui/material"
+import { Box, Grid, Paper, Typography } from "@mui/material"
 import { Author } from "@/api/types"
 import { StyledImage } from "./styles"
 
@@ -31,7 +31,7 @@ export const AuthorsTop: FC<{ authors: Author[] }> = ({ authors }) => {
   const topAuthorsTitle = `Top ${TOP_AUTHORS_AMOUNT} Authors`
 
   return (
-    <Box bgcolor="white" borderRadius="16px" padding={3} my={[0, -3]}>
+    <Paper variant="outlined" sx={{ p: 3, my: [0, -3] }}>
       <Grid container>
         <Grid item mb={1}>
           <Typography variant="h4">{topAuthorsTitle}</Typography>
@@ -42,6 +42,6 @@ export const AuthorsTop: FC<{ authors: Author[] }> = ({ authors }) => {
           </Grid>
         ))}
       </Grid>
-    </Box>
+    </Paper>
   )
 }

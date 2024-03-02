@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, Grid, Typography } from "@mui/material"
+import { Box, Card, CardActionArea, CardContent, Grid, Typography } from "@mui/material"
 import { categoriesMock } from "./mocks"
 
 const PopularCategories = () => {
@@ -11,19 +11,14 @@ const PopularCategories = () => {
       <Grid container>
         {categoriesMock.map(({ title, IconComponent }) => (
           <Grid item xs={6} sm={4} md={2} display="flex" key={title}>
-            <Box
-              bgcolor="common.white"
-              borderRadius="15px"
-              p={2}
-              width="100%"
-              display="flex"
-              gap={1}
-              alignItems="center"
-              justifyContent="center"
-            >
-              <IconComponent color="primary" />
-              <Typography variant="body1">{title}</Typography>
-            </Box>
+            <Card variant="outlined" sx={{ width: "100%" }}>
+              <CardActionArea>
+                <CardContent sx={{ display: "flex", gap: 1 }}>
+                  <IconComponent color="primary" />
+                  <Typography variant="body1">{title}</Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
           </Grid>
         ))}
       </Grid>

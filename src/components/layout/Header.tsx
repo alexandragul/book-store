@@ -16,7 +16,8 @@ const HeaderWrapper = styled(Box)(
   height: 60px;
   display: flex;
   align-items: center;
-  background-color: ${theme.palette.common.white}
+  background-color: ${theme.palette.common.white};
+  border-bottom: 1px solid ${theme.palette.divider};
 `,
 )
 
