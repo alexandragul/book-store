@@ -3,7 +3,7 @@ import { Container } from "@mui/material"
 import { api } from "@/api/axios"
 import { Author, Book } from "@/api/types"
 import Layout from "@/components/layout"
-import Banner from "@/components/pages/index/Banner"
+import Banner from "@/components/pages/index/banner"
 import PopularCategories from "@/components/pages/index/popularCategories"
 import Top from "@/components/pages/index/top"
 
