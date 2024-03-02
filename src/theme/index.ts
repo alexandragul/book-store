@@ -11,7 +11,7 @@ export const roboto = Roboto({
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#A0C587",
+      main: "#519E8A",
     },
     secondary: {
       main: "#1F1E2F",
@@ -22,6 +22,39 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: roboto.style.fontFamily,
+    h1: {
+      fontSize: 48,
+      fontWeight: 700,
+      lineHeight: 1,
+    },
+    h2: {
+      fontSize: 40,
+      fontWeight: 700,
+      lineHeight: 1,
+    },
+    h3: {
+      fontSize: 32,
+      fontWeight: 700,
+      lineHeight: 1,
+    },
+    h4: {
+      fontSize: 28,
+      fontWeight: 500,
+      lineHeight: 1,
+    },
+    h5: {
+      fontSize: 24,
+      fontWeight: 500,
+      lineHeight: 1.2,
+    },
+    body1: {
+      fontSize: 16,
+      lineHeight: 1.4,
+    },
+    body2: {
+      fontSize: 14,
+      lineHeight: 1.4,
+    },
   },
   components: {
     MuiButton: {
@@ -49,6 +82,11 @@ const theme = createTheme({
     MuiGrid: {
       defaultProps: {
         spacing: 2,
+      },
+    },
+    MuiContainer: {
+      defaultProps: {
+        maxWidth: "lg",
       },
     },
   },
