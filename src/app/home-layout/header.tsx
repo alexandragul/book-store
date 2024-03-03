@@ -1,3 +1,5 @@
+"use client"
+
 import { Box, Button, Container, IconButton, Typography } from "@mui/material"
 import { AccountCircleOutlined } from "@mui/icons-material"
 import { Link } from "@/components/Link"
