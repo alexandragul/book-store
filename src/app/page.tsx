@@ -1,3 +1,4 @@
+import { Metadata } from "next"
 import Home from "@/app/home"
 import { api } from "@/api/axios"
 
@@ -9,6 +10,10 @@ const getBooks = async () => {
 const getAuthors = async () => {
   const { data: authors } = await api.get("/authors")
   return authors
+}
+
+export const metadata: Metadata = {
+  title: "Storybook",
 }
 
 const Page = async () => {
