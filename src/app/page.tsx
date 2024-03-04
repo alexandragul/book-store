@@ -1,6 +1,6 @@
 import { Metadata } from "next"
-import Home from "@/app/home"
 import { api } from "@/api/axios"
+import { Home } from "./home"
 
 const getBooks = async () => {
   const { data: books } = await api.get("/books")

@@ -10,7 +10,7 @@ interface HomeProps {
   authors: Author[]
 }
 
-const Home = ({ books, authors }: HomeProps) => {
+export const Home = ({ books, authors }: HomeProps) => {
   return (
     <Container>
       <Banner />
@@ -19,5 +19,3 @@ const Home = ({ books, authors }: HomeProps) => {
     </Container>
   )
 }
-
-export default Home

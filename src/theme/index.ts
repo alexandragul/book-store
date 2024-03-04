@@ -10,7 +10,7 @@ export const roboto = Roboto({
   fallback: ["Helvetica", "Arial", "sans-serif"],
 })
 
-const theme = createTheme({
+export const theme = createTheme({
   palette: {
     primary: {
       main: "#519E8A",
@@ -93,5 +93,3 @@ const theme = createTheme({
     },
   },
 })
-
-export default theme
