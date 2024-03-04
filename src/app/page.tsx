@@ -1,12 +1,12 @@
 import Home from "@/app/home"
 import { api } from "@/api/axios"
 
-async function getBooks() {
+const getBooks = async () => {
   const { data: books } = await api.get("/books")
   return books
 }
 
-async function getAuthors() {
+const getAuthors = async () => {
   const { data: authors } = await api.get("/authors")
   return authors
 }
