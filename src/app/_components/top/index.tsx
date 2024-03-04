@@ -1,8 +1,8 @@
 import React, { FC } from "react"
 import { Grid } from "@mui/material"
 import { Author, Book } from "@/api/types"
-import { BooksTop } from "@/app/components/top/books-top"
-import { AuthorsTop } from "@/app/components/top/authors-top"
+import { BooksTop } from "./books-top"
+import { AuthorsTop } from "./authors-top"
 
 export const Top: FC<{ books: Book[]; authors: Author[] }> = ({ books, authors }) => {
   return (

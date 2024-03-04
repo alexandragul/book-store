@@ -2,7 +2,7 @@ import React, { FC } from "react"
 import { join } from "lodash-es"
 import { Box, Grid, Paper, Typography } from "@mui/material"
 import { Author } from "@/api/types"
-import { StyledImage } from "@/app/components/top/styles"
+import { StyledImage } from "./styles"
 
 const TOP_AUTHORS_AMOUNT = 2
 

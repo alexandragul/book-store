@@ -2,7 +2,7 @@ import React, { FC } from "react"
 import { join } from "lodash-es"
 import { Box, Grid, Typography } from "@mui/material"
 import { Author, Book } from "@/api/types"
-import { BookCard, StyledImage } from "@/app/components/top/styles"
+import { BookCard, StyledImage } from "./styles"
 
 const TOP_BOOKS_AMOUNT = 4
 
