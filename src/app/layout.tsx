@@ -2,8 +2,7 @@
 
 import React, { ReactNode } from "react"
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter"
-import { ThemeProvider } from "@/app/theme-provider"
-import { HomeLayout } from "@/app/home-layout"
+import { ThemeProvider, HomeLayout } from "./components"
 
 const Layout = ({ children }: { children: ReactNode }) => {
   return (

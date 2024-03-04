@@ -2,7 +2,7 @@ import React from "react"
 import { Box, Card, CardActionArea, CardContent, Grid, Typography } from "@mui/material"
 import { categoriesMock } from "./mocks"
 
-const PopularCategories = () => {
+export const PopularCategories = () => {
   return (
     <Box mb={8}>
       <Typography variant="h4" mb={2}>
@@ -25,5 +25,3 @@ const PopularCategories = () => {
     </Box>
   )
 }
-
-export default PopularCategories

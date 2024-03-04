@@ -3,9 +3,7 @@
 import { Container } from "@mui/material"
 import { Author, Book } from "@/api/types"
 
-import Banner from "./components/banner"
-import PopularCategories from "./components/popular-categories"
-import Top from "./components/top"
+import { Banner, PopularCategories, Top } from "./components"
 
 interface HomeProps {
   books: Book[]
