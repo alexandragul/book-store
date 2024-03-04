@@ -1,36 +1,16 @@
-import { Box, Button, Container, IconButton, Typography } from "@mui/material"
+"use client"
+
+import { Box, Button, IconButton, Typography } from "@mui/material"
 import { AccountCircleOutlined } from "@mui/icons-material"
 import { Link } from "@/components/Link"
-import { useDeviceDetect } from "@/hooks/useDeviceDetect"
-import { styled } from "@mui/material/styles"
+import { useDeviceDetect } from "@/hooks/use-device-detect"
+
+import { HeaderContainer, HeaderLink, HeaderWrapper } from "./styles"
 
 const navigation = [
   { label: "Books", url: "/books" },
   { label: "About", url: "/about" },
 ]
-
-const HeaderWrapper = styled(Box)(
-  ({ theme }) => `
-  position: fixed;
-  width: 100%;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  background-color: ${theme.palette.common.white};
-  border-bottom: 1px solid ${theme.palette.divider};
-`,
-)
-
-const HeaderContainer = styled(Container)`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-`
-
-const HeaderLink = styled(Link)`
-  all: unset;
-  cursor: pointer;
-`
 
 export const Header = () => {
   const { isMobile } = useDeviceDetect()

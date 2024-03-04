@@ -10,7 +10,7 @@ const StyledImage = styled(Image)`
   height: 100%;
 `
 
-const Banner = () => {
+export const Banner = () => {
   return (
     <Paper variant="outlined" sx={{ overflow: "hidden", mb: 8 }}>
       <Grid container spacing={0}>
@@ -32,5 +32,3 @@ const Banner = () => {
     </Paper>
   )
 }
-
-export default Banner

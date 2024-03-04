@@ -1,3 +1,5 @@
+"use client"
+
 import { Roboto } from "next/font/google"
 import { createTheme } from "@mui/material/styles"
 
@@ -8,7 +10,7 @@ export const roboto = Roboto({
   fallback: ["Helvetica", "Arial", "sans-serif"],
 })
 
-const theme = createTheme({
+export const theme = createTheme({
   palette: {
     primary: {
       main: "#519E8A",
@@ -91,5 +93,3 @@ const theme = createTheme({
     },
   },
 })
-
-export default theme

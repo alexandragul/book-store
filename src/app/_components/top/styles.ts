@@ -1,6 +1,6 @@
-import { styled } from "@mui/material/styles"
 import Image from "next/image"
-import Link from "next/link"
+import { styled } from "@mui/material/styles"
+import { Link } from "@/components/Link"
 
 export const StyledImage = styled(Image)`
   width: 100px;
