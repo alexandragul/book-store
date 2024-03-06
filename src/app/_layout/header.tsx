@@ -3,13 +3,14 @@
 import { Box, Button, IconButton, Typography } from "@mui/material"
 import { AccountCircleOutlined } from "@mui/icons-material"
 import { Link } from "@/components/Link"
+import { Routes } from "@/config"
 import { useDeviceDetect } from "@/hooks/use-device-detect"
 
 import { HeaderContainer, HeaderLink, HeaderWrapper } from "./styles"
 
 const navigation = [
-  { label: "Books", url: "/books" },
-  { label: "About", url: "/about" },
+  { label: "Books", url: Routes.BOOKS },
+  { label: "About", url: Routes.ABOUT },
 ]
 
 export const Header = () => {
@@ -35,9 +36,11 @@ export const Header = () => {
         </Box>
         <Box display="flex" alignItems="center" gap={1}>
           {!isMobile && (
-            <Button variant="contained" color="primary">
-              Sign In / Sign Up
-            </Button>
+            <Link href={Routes.SIGN_IN}>
+              <Button variant="contained" color="primary" component="span">
+                Sign In / Sign Up
+              </Button>
+            </Link>
           )}
           <IconButton color="secondary" size="medium">
             <AccountCircleOutlined />
