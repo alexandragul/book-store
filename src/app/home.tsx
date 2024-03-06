@@ -12,7 +12,7 @@ interface HomeProps {
 
 export const Home = ({ books, authors }: HomeProps) => {
   return (
-    <Container>
+    <Container sx={{ py: 6 }}>
       <Banner />
       <PopularCategories />
       <Top books={books} authors={authors} />
