@@ -62,12 +62,19 @@ export const theme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
-          borderRadius: "24px",
-          borderWidth: "2px",
+          borderRadius: 12,
+          borderWidth: 2,
           boxShadow: "none",
         },
         contained: {
           color: "white",
+        },
+      },
+    },
+    MuiOutlinedInput: {
+      styleOverrides: {
+        root: {
+          borderRadius: 12,
         },
       },
     },
