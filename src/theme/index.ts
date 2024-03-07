@@ -70,10 +70,19 @@ export const theme = createTheme({
           borderRadius: 12,
           borderWidth: 2,
           boxShadow: "none",
+          ":hover": {
+            borderWidth: 2,
+          },
         },
         contained: {
           color: "white",
         },
+      },
+    },
+    MuiLink: {
+      defaultProps: {
+        underline: "hover",
+        variant: "body1",
       },
     },
     MuiOutlinedInput: {

@@ -20,7 +20,7 @@ export const Header = () => {
     <HeaderWrapper>
       <HeaderContainer>
         <Box display="flex" alignItems="center" gap={5}>
-          <HeaderLink href="/">
+          <HeaderLink href="/" underline="none">
             <Typography variant="h4" component="h1" color="primary" fontWeight={900}>
               Storybook
             </Typography>
@@ -37,7 +37,7 @@ export const Header = () => {
         <Box display="flex" alignItems="center" gap={1}>
           {!isMobile && (
             <Link href={Routes.SIGN_IN}>
-              <Button variant="contained" color="secondary" component="span">
+              <Button variant="outlined" color="secondary" component="span">
                 Sign In / Sign Up
               </Button>
             </Link>
