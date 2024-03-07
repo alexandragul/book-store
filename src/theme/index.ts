@@ -16,7 +16,7 @@ export const theme = createTheme({
       main: "#519E8A",
     },
     secondary: {
-      main: "#1F1E2F",
+      main: "#031A6B",
     },
     background: {
       default: "rgba(0,0,0,0.04)",
@@ -46,6 +46,11 @@ export const theme = createTheme({
     },
     h5: {
       fontSize: 24,
+      fontWeight: 500,
+      lineHeight: 1.2,
+    },
+    h6: {
+      fontSize: 20,
       fontWeight: 500,
       lineHeight: 1.2,
     },

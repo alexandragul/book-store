@@ -37,7 +37,7 @@ export const Header = () => {
         <Box display="flex" alignItems="center" gap={1}>
           {!isMobile && (
             <Link href={Routes.SIGN_IN}>
-              <Button variant="contained" color="primary" component="span">
+              <Button variant="contained" color="secondary" component="span">
                 Sign In / Sign Up
               </Button>
             </Link>
