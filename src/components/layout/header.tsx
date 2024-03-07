@@ -5,7 +5,6 @@ import { AccountCircleOutlined } from "@mui/icons-material"
 import { Link } from "@/components/Link"
 import { Routes } from "@/config"
 import { useDeviceDetect } from "@/hooks/use-device-detect"
-
 import { HeaderContainer, HeaderLink, HeaderWrapper } from "./styles"
 
 const navigation = [
