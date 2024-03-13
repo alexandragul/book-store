@@ -3,7 +3,7 @@
 import { Box, Button, IconButton, Typography } from "@mui/material"
 import { AccountCircleOutlined } from "@mui/icons-material"
 import { Link } from "@/components/Link"
-import { Routes } from "@/config"
+import { isLoggedIn, Routes } from "@/config"
 import { useDeviceDetect } from "@/hooks/use-device-detect"
 import { HeaderContainer, HeaderLink, HeaderWrapper } from "./styles"
 
@@ -27,23 +27,32 @@ export const Header = () => {
           <Box display="flex" alignItems="center" gap={3}>
             {!isMobile &&
               navigation.map((item) => (
-                <Link href={item.url} key={item.url} color="text.primary">
+                <Link href={item.url} key={item.url} color="secondary">
                   {item.label}
                 </Link>
               ))}
           </Box>
         </Box>
         <Box display="flex" alignItems="center" gap={1}>
-          {!isMobile && (
-            <Link href={Routes.SIGN_IN}>
-              <Button variant="outlined" color="secondary" component="span">
-                Sign In / Sign Up
-              </Button>
-            </Link>
+          {!isMobile && !isLoggedIn && (
+            <>
+              <Link href={Routes.SIGN_IN}>
+                <Button variant="text" color="secondary" component="span">
+                  Sign In
+                </Button>
+              </Link>
+              <Link href={Routes.SIGN_UP}>
+                <Button variant="contained" color="secondary" component="span">
+                  Sign Up
+                </Button>
+              </Link>
+            </>
           )}
-          <IconButton color="secondary" size="medium">
-            <AccountCircleOutlined />
-          </IconButton>
+          {isLoggedIn && (
+            <IconButton color="secondary" size="medium">
+              <AccountCircleOutlined />
+            </IconButton>
+          )}
         </Box>
       </HeaderContainer>
     </HeaderWrapper>
