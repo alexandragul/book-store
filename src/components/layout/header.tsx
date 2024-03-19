@@ -16,7 +16,7 @@ export const Header = () => {
   const { isMobile } = useDeviceDetect()
 
   return (
-    <HeaderWrapper>
+    <HeaderWrapper variant="outlined">
       <HeaderContainer>
         <Box display="flex" alignItems="center" gap={5}>
           <HeaderLink href="/" underline="none">

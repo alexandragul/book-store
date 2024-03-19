@@ -9,9 +9,15 @@ const Layout = ({ children }: { children: ReactNode }) => {
     <BackgroundImage>
       <Container sx={{ height: "100%" }}>
         <Grid container alignItems="flex-start" spacing={0} height="100%">
-          <PaperContainer item xs={12} lg={5}>
+          <PaperContainer item xs={12} md={7} lg={5}>
             <Paper sx={{ alignSelf: "stretch" }}>
-              <Box p={8} display="flex" flexDirection="column" alignItems="center">
+              <Box
+                px={[3, 8]}
+                py={[6, 8]}
+                display="flex"
+                flexDirection="column"
+                alignItems="center"
+              >
                 {children}
               </Box>
             </Paper>

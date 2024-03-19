@@ -112,5 +112,13 @@ export const theme = createTheme({
         maxWidth: "lg",
       },
     },
+    MuiAppBar: {
+      defaultProps: {
+        sx: {
+          bgcolor: "#ffffff",
+          borderRadius: 0,
+        },
+      },
+    },
   },
 })
