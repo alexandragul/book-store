@@ -13,10 +13,10 @@ export const roboto = Roboto({
 export const theme = createTheme({
   palette: {
     primary: {
-      main: "#519E8A",
+      main: "#CC2936",
     },
     secondary: {
-      main: "#1F1E2F",
+      main: "#3B3561",
     },
     background: {
       default: "rgba(0,0,0,0.04)",
@@ -49,6 +49,11 @@ export const theme = createTheme({
       fontWeight: 500,
       lineHeight: 1.2,
     },
+    h6: {
+      fontSize: 20,
+      fontWeight: 500,
+      lineHeight: 1.2,
+    },
     body1: {
       fontSize: 16,
       lineHeight: 1.4,
@@ -62,19 +67,35 @@ export const theme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
-          borderRadius: "24px",
-          borderWidth: "2px",
+          borderRadius: 12,
+          borderWidth: 2,
           boxShadow: "none",
+          ":hover": {
+            borderWidth: 2,
+          },
         },
         contained: {
           color: "white",
         },
       },
     },
+    MuiLink: {
+      defaultProps: {
+        underline: "hover",
+        variant: "body1",
+      },
+    },
+    MuiOutlinedInput: {
+      styleOverrides: {
+        root: {
+          borderRadius: 12,
+        },
+      },
+    },
     MuiPaper: {
       styleOverrides: {
         root: {
-          borderRadius: "15px",
+          borderRadius: 12,
         },
       },
       defaultProps: {
@@ -89,6 +110,14 @@ export const theme = createTheme({
     MuiContainer: {
       defaultProps: {
         maxWidth: "lg",
+      },
+    },
+    MuiAppBar: {
+      defaultProps: {
+        sx: {
+          bgcolor: "#ffffff",
+          borderRadius: 0,
+        },
       },
     },
   },

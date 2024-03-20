@@ -1,18 +1,11 @@
 import { styled } from "@mui/material/styles"
-import { Box, Container } from "@mui/material"
+import { AppBar, Container } from "@mui/material"
 import { Link } from "@/components/Link"
 
-export const HeaderWrapper = styled(Box)(
-  ({ theme }) => `
-  position: fixed;
-  width: 100%;
+export const HeaderWrapper = styled(AppBar)`
   height: 60px;
-  display: flex;
-  align-items: center;
-  background-color: ${theme.palette.common.white};
-  border-bottom: 1px solid ${theme.palette.divider};
-`,
-)
+  justify-content: center;
+`
 
 export const HeaderContainer = styled(Container)`
   display: flex;

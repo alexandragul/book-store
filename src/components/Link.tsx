@@ -20,9 +20,3 @@ export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
     </NextLink>
   ),
 )
-
-Link.defaultProps = {
-  underline: "none",
-  color: "text",
-  variant: "body1",
-}

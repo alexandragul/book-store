@@ -28,7 +28,7 @@ interface BooksProps {
 
 export const Books: FC<BooksProps> = ({ books }) => {
   return (
-    <Container>
+    <Container sx={{ py: 6 }}>
       <Typography variant="h3" mb={3}>
         Books
       </Typography>
