@@ -2,7 +2,7 @@
 
 import React, { ReactNode } from "react"
 import { Box } from "@mui/material"
-import { Header } from "./header"
+import { Header } from "./components"
 
 export const HomeLayout = ({ children }: { children: ReactNode }) => {
   return (
