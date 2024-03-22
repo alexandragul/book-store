@@ -14,10 +14,8 @@ const StyledImage = styled(Image)`
 
 const StyledCard = styled(Card)(
   ({ theme }) => `
-  border-color: ${theme.palette.background.paper};
-
   :hover {
-    border-color: ${theme.palette.divider};
+    box-shadow: ${theme.shadows[3]};
   }
 `,
 )
@@ -35,7 +33,7 @@ export const Books: FC<BooksProps> = ({ books }) => {
       <Grid container>
         {map(books, (book) => (
           <Grid item xs={12} sm={6} md={4} lg={3} height="100%">
-            <Link href={`/books/${book.id}`}>
+            <Link color="text.primary" underline="none" href={`/books/${book.id}`}>
               <StyledCard variant="outlined">
                 <Box display="flex">
                   {book.image && (
