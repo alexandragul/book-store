@@ -12,6 +12,7 @@ export interface Author {
 export interface Book {
   id: number
   title: string
+  description: Nullable<string>
   authorId: number
   author?: Author
   image: Nullable<string>
